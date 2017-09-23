@@ -39,7 +39,7 @@ class PostsNew extends Component {
 }
 
 function validate(values) {
-    const errors;
+    const errors = {};
 
     // Validate the inputs from 'values'
     if (!values.title) {
@@ -58,6 +58,5 @@ function validate(values) {
 
 export default reduxForm({
     validate,
-    form: 'PostsNewForm',
-    }
+    form: 'PostsNewForm'
 })(PostsNew);
